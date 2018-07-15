@@ -3,7 +3,8 @@ from datetime import datetime
 from flask_jwt_extended.view_decorators import jwt_required
 from flask_restful import Resource, reqparse
 
-from app.models.BaseClasses import BaseResponse
+from app.models.BaseClasses import BaseResponse, BaseMethods
+from app.models.Device import DeviceModel
 from app.models.User import UserModel
 
 
@@ -65,13 +66,21 @@ class User(Resource):
 
             if UserModel.find_by_email(data['email']):
                 return BaseResponse.bad_request_response('This email already exists.', {})
+            elif UserModel.find_by_phone(data['phoneNumber']):
+                return BaseResponse.bad_request_response('This phone number already exists.', {})
 
-            user = UserModel(role_id=data['roleId'], email=data['email'], password=data['password'],
+            hash_password = UserModel.hash_password(data['password'])
+            user = UserModel(role_id=data['roleId'], email=data['email'], password=hash_password,
                              full_name=data['fullName'], last_name=data['lastName'], phone_number=data['phoneNumber'],
                              profile_picture=data['profilePicture'], last_ip_connection=data['lastIPConnection'],
                              created_at=None, updated_on=None, status=None)
 
             user.save_to_db()
+
+            if user.lastIPConnection and DeviceModel.find_by_ip(user.lastIPConnection) is None:
+                device = DeviceModel(user_id=user.id, ip=user.lastIPConnection,
+                                     created_at=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+                device.save_to_db()
 
             return BaseResponse.created_response('User created successfully.', user.json(is_long=True))
         except Exception as e:
@@ -84,9 +93,11 @@ class User(Resource):
 
             user = UserModel.find_by_id(_id)
             if user:
+                hash_password = UserModel.hash_password(data['password'])
+
                 user.roleId = data['roleId'] if (data['roleId'] is not None) else user.roleId
                 user.email = data['email'] if (data['email'] is not None) else user.email
-                user.password = data['password'] if (data['password'] is not None) else user.password
+                user.password = hash_password if (data['password'] is not None) else user.password
                 user.fullName = data['fullName'] if (data['fullName'] is not None) else user.fullName
                 user.lastName = data['lastName'] if (data['lastName'] is not None) else user.lastName
                 user.phoneNumber = data['phoneNumber'] if (data['phoneNumber'] is not None) else user.phoneNumber
@@ -97,6 +108,11 @@ class User(Resource):
                 user.updatedOn = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
                 user.save_to_db()
+
+                if user.lastIPConnection and DeviceModel.find_by_ip(user.lastIPConnection) is None:
+                    device = DeviceModel(user_id=user.id, ip=user.lastIPConnection,
+                                         created_at=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+                    device.save_to_db()
 
                 return BaseResponse.ok_response('User updated successfully.', user.json(is_long=True))
             else:
@@ -111,6 +127,7 @@ class User(Resource):
             if user:
                 user.status = 'INA'
                 user.updatedOn = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
                 user.save_to_db()
 
                 return BaseResponse.ok_response('User deleted successfully.', {})

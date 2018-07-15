@@ -45,7 +45,7 @@ class DoctorModel(db.Model, BaseMethods):
             'id': self.id,
             'user': self.user.json(is_long=True),
             'plan': self.plan.json(),
-            'address': self.address.json() if (self.addressId is not None) else None,
+            'address': self.address.json(doctors_list=False) if (self.addressId is not None) else None,
             'doctorIdentification': self.doctorIdentification,
             'status': self.status
         }

@@ -29,3 +29,7 @@ class DoctorSpecialityModel(db.Model, BaseMethods):
             'doctor': self.doctor.json(),
             'medicalSpeciality': self.medicalSpeciality.json()
         }
+
+    @classmethod
+    def verify_doctor_speciality(cls, doctor_id, med_speciality):
+        return cls.query.filter_by(doctorId=doctor_id).filter_by(medicalSpecialityId=med_speciality).first()

@@ -1,5 +1,7 @@
 from datetime import datetime
 
+from werkzeug.security import generate_password_hash, check_password_hash
+
 from app.db import db
 from app.models.BaseClasses import BaseMethods
 
@@ -44,6 +46,13 @@ class UserModel(db.Model, BaseMethods):
 
     def __repr__(self):
         return 'User: %r' % self.fullName
+
+    @staticmethod
+    def hash_password(password):
+        return generate_password_hash(password, method='pbkdf2:sha256:50')
+
+    def check_password(self, password):
+        return check_password_hash(self.password, password)
 
     def json(self, is_long):
         if is_long:

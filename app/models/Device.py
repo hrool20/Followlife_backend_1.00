@@ -31,3 +31,7 @@ class DeviceModel(db.Model, BaseMethods):
             'user': self.user.json(is_long=False),
             'ip': self.ip
         }
+
+    @classmethod
+    def find_by_ip(cls, ip):
+        return cls.query.filter_by(ip=ip).first()

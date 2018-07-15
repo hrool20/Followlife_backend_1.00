@@ -30,17 +30,31 @@ class AddressModel(db.Model, BaseMethods):
         self.complement = complement
         self.number = number
         self.createdAt = datetime.now().strftime('%Y-%m-%d %H:%M:%S') if (created_at is None) else created_at
-        self.updatedOn = updated_on
+        self.updatedOn = datetime.now().strftime('%Y-%m-%d %H:%M:%S') if (updated_on is None) else updated_on
         self.status = status
 
     def __repr__(self):
         return 'Address: %r' % self.street
 
-    def json(self):
-        return {
-            'district': self.district.json(),
-            'street': self.street,
-            'neighborhood': self.neighborhood,
-            'complement': self.complement,
-            'number': self.number
-        }
+    def json(self, doctors_list=bool):
+        if doctors_list:
+            return {
+                'doctors': list(map(lambda x: x.json(), self.doctors)),
+                'district': self.district.json(),
+                'street': self.street,
+                'neighborhood': self.neighborhood,
+                'complement': self.complement,
+                'number': self.number
+            }
+        else:
+            return {
+                'district': self.district.json(),
+                'street': self.street,
+                'neighborhood': self.neighborhood,
+                'complement': self.complement,
+                'number': self.number
+            }
+
+    @classmethod
+    def find_by_number(cls, number):
+        return cls.query.filter_by(number=number).first()

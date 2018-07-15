@@ -1,3 +1,5 @@
+import base64
+
 from flask.helpers import make_response
 from flask.json import jsonify
 
@@ -63,6 +65,25 @@ class BaseResponse:
 class BaseMethods:
     def __init__(self):
         pass
+
+    @staticmethod
+    def encode(key, value):
+        enc = []
+        for i in range(len(value)):
+            key_c = key[i % len(key)]
+            enc_c = chr((ord(value[i]) + ord(key_c)) % 256)
+            enc.append(enc_c)
+        return base64.urlsafe_b64encode("".join(enc))
+
+    @staticmethod
+    def decode(key, encoded_value):
+        dec = []
+        encoded_value = base64.urlsafe_b64decode(encoded_value)
+        for i in range(len(encoded_value)):
+            key_c = key[i % len(key)]
+            dec_c = chr((256 + ord(encoded_value[i]) - ord(key_c)) % 256)
+            dec.append(dec_c)
+        return "".join(dec)
 
     def save_to_db(self):
         db.session.add(self)

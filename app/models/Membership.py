@@ -21,9 +21,10 @@ class MembershipModel(db.Model, BaseMethods):
     accessCode = db.Column(db.String(6))
     createdAt = db.Column(db.DateTime, nullable=False)
     expiresAt = db.Column(db.DateTime)
+    updatedOn = db.Column(db.DateTime)
     status = db.Column(db.String(3))
 
-    def __init__(self, doctor_id, patient_id, referenced_email, access_code, created_at, expires_at, status):
+    def __init__(self, doctor_id, patient_id, referenced_email, access_code, created_at, expires_at, updated_on, status):
         super(MembershipModel, self).__init__()
         self.doctorId = doctor_id
         self.patientId = patient_id
@@ -31,6 +32,7 @@ class MembershipModel(db.Model, BaseMethods):
         self.accessCode = access_code
         self.createdAt = datetime.now().strftime('%Y-%m-%d %H:%M:%S') if (created_at is None) else created_at
         self.expiresAt = expires_at
+        self.updatedOn = datetime.now().strftime('%Y-%m-%d %H:%M:%S') if (updated_on is None) else updated_on
         self.status = status
 
     def __repr__(self):

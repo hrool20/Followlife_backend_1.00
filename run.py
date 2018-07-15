@@ -18,9 +18,9 @@ from app.resources.Membership import Membership
 from app.resources.Patient import Patient
 from app.resources.Plan import Plan, PlanModel
 from app.resources.Prescription import Prescription
-from app.resources.PrescriptionType import PrescriptionType
+from app.resources.PrescriptionType import PrescriptionType, PrescriptionTypeModel
 from app.resources.Role import Role, RoleModel
-from app.resources.UnitsOfMeasure import UnitOfMeasure
+from app.resources.UnitsOfMeasure import UnitOfMeasure, UnitOfMeasureModel
 from app.resources.User import User
 from app.resources.Login import Login
 from config.DevelopmentEnvironment import DevelopmentEnvironment
@@ -174,6 +174,43 @@ def load_tables():
     for obj_med_spec in med_specialities:
         obj_med_spec.save_to_db()
         pass
+
+    # Prescription Type
+    prescription_type1 = PrescriptionTypeModel('Medication', 'MED')
+    prescription_type2 = PrescriptionTypeModel('Activity', 'ACV')
+    prescription_type3 = PrescriptionTypeModel('Diet', 'DIE')
+    prescription_type4 = PrescriptionTypeModel('Other', 'OTH')
+
+    prescriptions_type = [prescription_type1, prescription_type2, prescription_type3, prescription_type4]
+
+    for obj_prescription_type in prescriptions_type:
+        obj_prescription_type.save_to_db()
+        pass
+
+    # Unit of Measure
+    unit_of_m1 = UnitOfMeasureModel('Millimeter', 'mm')
+    unit_of_m2 = UnitOfMeasureModel('Centimeter', 'cm')
+    unit_of_m3 = UnitOfMeasureModel('Metre', 'm')
+    unit_of_m4 = UnitOfMeasureModel('Kilometer', 'km')
+    unit_of_m5 = UnitOfMeasureModel('Mile', 'mi')
+    unit_of_m6 = UnitOfMeasureModel('Milligram', 'mg')
+    unit_of_m7 = UnitOfMeasureModel('Gram', 'g')
+    unit_of_m8 = UnitOfMeasureModel('Kilogram', 'kg')
+    unit_of_m9 = UnitOfMeasureModel('Pound', 'lb')
+    unit_of_m10 = UnitOfMeasureModel('Ounce', 'oz')
+    unit_of_m11 = UnitOfMeasureModel('Ampere', 'A')
+    unit_of_m12 = UnitOfMeasureModel('Celsius', '°C')
+    unit_of_m13 = UnitOfMeasureModel('Kelvin', 'K')
+    unit_of_m14 = UnitOfMeasureModel('Candela', 'cd')
+    unit_of_m15 = UnitOfMeasureModel('Mole', 'mol')
+    unit_of_m16 = UnitOfMeasureModel('Liter', 'l')
+
+    units_of_m = [unit_of_m1, unit_of_m2, unit_of_m3, unit_of_m4, unit_of_m5, unit_of_m6, unit_of_m7, unit_of_m8,
+                  unit_of_m9, unit_of_m10, unit_of_m11, unit_of_m12, unit_of_m13, unit_of_m14, unit_of_m15, unit_of_m16]
+
+    for obj_unit_of_m in units_of_m:
+        obj_unit_of_m.save_to_db()
+        pass
     pass
 
 
@@ -189,7 +226,10 @@ def load_tables():
 
 
 # noinspection PyTypeChecker
-# api.add_resource(Address, '/api/v1/users', '/api/v1/users/<string:_id>')
+api.add_resource(Address, '/api/v1/addresses',
+                 '/api/v1/addresses/',
+                 '/api/v1/addresses/<string:_id>',
+                 '/api/v1/addresses/<string:_id>/doctors')
 api.add_resource(AppointmentDoctor, '/api/v1/doctors/<string:_id>/appointments',
                  '/api/v1/doctors/<string:_id>/appointments/',
                  '/api/v1/doctors/<string:_id>/appointments/<string:appointment_id>')
