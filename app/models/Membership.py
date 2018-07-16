@@ -22,7 +22,7 @@ class MembershipModel(db.Model, BaseMethods):
     createdAt = db.Column(db.DateTime, nullable=False)
     expiresAt = db.Column(db.DateTime)
     updatedOn = db.Column(db.DateTime)
-    status = db.Column(db.String(3))
+    status = db.Column(db.String(3), server_default='ACT')
 
     def __init__(self, doctor_id, patient_id, referenced_email, access_code, created_at, expires_at, updated_on, status):
         super(MembershipModel, self).__init__()
@@ -57,3 +57,11 @@ class MembershipModel(db.Model, BaseMethods):
                 'expiredAt': self.expiresAt,
                 'status': self.status
             }
+
+    @classmethod
+    def find_by_patient_id(cls, patient_id):
+        return cls.query.filter_by(patientId=patient_id).all()
+
+    @classmethod
+    def find_by_doctor_id(cls, doctor_id):
+        return cls.query.filter_by(doctorId=doctor_id).all()

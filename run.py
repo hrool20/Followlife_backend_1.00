@@ -14,7 +14,7 @@ from app.resources.Indicator import Indicator
 from app.resources.IndicatorEntry import IndicatorEntry
 from app.resources.IndicatorType import IndicatorType
 from app.resources.MedicalSpeciality import MedicalSpeciality, MedicalSpecialityModel
-from app.resources.Membership import Membership
+from app.resources.Membership import MembershipDoctor, MembershipPatient
 from app.resources.Patient import Patient
 from app.resources.Plan import Plan, PlanModel
 from app.resources.Prescription import Prescription
@@ -237,22 +237,41 @@ api.add_resource(AppointmentPatient, '/api/v1/patients/<string:_id>/appointments
                  '/api/v1/patients/<string:_id>/appointments/',
                  '/api/v1/patients/<string:_id>/appointments/<string:appointment_id>')
 # api.add_resource(Device, '/api/v1/users', '/api/v1/users/<string:_id>')
-# api.add_resource(District, '/api/v1/users', '/api/v1/users/<string:_id>')
+api.add_resource(District, '/api/v1/districts',
+                 '/api/v1/districts/',
+                 '/api/v1/districts/<string:_id>')
 api.add_resource(Doctor, '/api/v1/doctors',
                  '/api/v1/doctors/',
                  '/api/v1/doctors/<string:_id>')
-# api.add_resource(DoctorSpeciality, '/api/v1/users', '/api/v1/users/<string:_id>')
+api.add_resource(DoctorSpeciality, '/api/v1/doctors/<string:_id>/doctor_specialities',
+                 '/api/v1/doctors/<string:_id>/doctor_specialities/',
+                 '/api/v1/doctors/<string:_id>/doctor_specialities/<string:doc_spec_id>')
 # api.add_resource(Indicator, '/api/v1/users', '/api/v1/users/<string:_id>')
 # api.add_resource(IndicatorEntry, '/api/v1/users', '/api/v1/users/<string:_id>')
 # api.add_resource(IndicatorType, '/api/v1/users', '/api/v1/users/<string:_id>')
-# api.add_resource(MedicalSpeciality, '/api/v1/users', '/api/v1/users/<string:_id>')
-# api.add_resource(Membership, '/api/v1/users', '/api/v1/users/<string:_id>')
+api.add_resource(MedicalSpeciality, '/api/v1/medical_specialities',
+                 '/api/v1/medical_specialities/',
+                 '/api/v1/medical_specialities/<string:_id>')
+api.add_resource(MembershipDoctor, '/api/v1/doctors/<string:doctor_id>/membership',
+                 '/api/v1/doctors/<string:doctor_id>/membership/',
+                 '/api/v1/doctors/<string:doctor_id>/patients',
+                 '/api/v1/doctors/<string:doctor_id>/patients/',
+                 '/api/v1/doctors/<string:doctor_id>/patients/<string:_id>')
+api.add_resource(MembershipPatient, '/api/v1/patients/<string:patient_id>/membership',
+                 '/api/v1/patients/<string:patient_id>/membership/',
+                 '/api/v1/patients/<string:patient_id>/doctors',
+                 '/api/v1/patients/<string:patient_id>/doctors/',
+                 '/api/v1/patients/<string:patient_id>/doctors/<string:_id>')
 api.add_resource(Patient, '/api/v1/patients',
                  '/api/v1/patients/',
                  '/api/v1/patients/<string:_id>')
-# api.add_resource(Plan, '/api/v1/users', '/api/v1/users/<string:_id>')
+api.add_resource(Plan, '/api/v1/plans',
+                 '/api/v1/plans/',
+                 '/api/v1/plans/<string:_id>')
 # api.add_resource(Prescription, '/api/v1/users', '/api/v1/users/<string:_id>')
-# api.add_resource(PrescriptionType, '/api/v1/users', '/api/v1/users/<string:_id>')
+api.add_resource(PrescriptionType, '/api/v1/prescriptions_type',
+                 '/api/v1/prescriptions_type/',
+                 '/api/v1/prescriptions_type/<string:_id>')
 # api.add_resource(Role, '/api/v1/users', '/api/v1/users/<string:_id>')
 # api.add_resource(UnitOfMeasure, '/api/v1/users', '/api/v1/users/<string:_id>')
 api.add_resource(User, '/api/v1/users',

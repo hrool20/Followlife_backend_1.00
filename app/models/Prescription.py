@@ -27,7 +27,7 @@ class PrescriptionModel(db.Model, BaseMethods):
     createdAt = db.Column(db.DateTime, nullable=False)
     startedAt = db.Column(db.DateTime)
     finishedAt = db.Column(db.DateTime)
-    status = db.Column(db.String(3))
+    status = db.Column(db.String(3), server_default='ACT')
 
     def __init__(self, doctor_id, patient_id, prescription_type_id, frequency, quantity, duration_in_days, description,
                  created_at, started_at, finished_at, status):

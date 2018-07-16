@@ -23,12 +23,18 @@ class DoctorSpecialityModel(db.Model, BaseMethods):
     def __repr__(self):
         return 'Doctor Speciality: %r' % self.doctorId
 
-    def json(self):
-        return {
-            'id': self.id,
-            'doctor': self.doctor.json(),
-            'medicalSpeciality': self.medicalSpeciality.json()
-        }
+    def json(self, only_spec=bool):
+        if only_spec:
+            return {
+                'id': self.id,
+                'medicalSpeciality': self.medicalSpeciality.json()
+            }
+        else:
+            return {
+                'id': self.id,
+                'doctor': self.doctor.json(),
+                'medicalSpeciality': self.medicalSpeciality.json()
+            }
 
     @classmethod
     def verify_doctor_speciality(cls, doctor_id, med_speciality):

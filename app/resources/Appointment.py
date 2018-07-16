@@ -37,7 +37,8 @@ class AppointmentDoctor(Resource):
 
     @jwt_required
     def get(self, _id=None, appointment_id=None):
-        if DoctorModel.find_by_id(_id) is None:
+        doctor = DoctorModel.find_by_id(_id)
+        if doctor is None:
             return BaseResponse.bad_request_response('Doctor does not exists.', {})
 
         if appointment_id:
@@ -46,7 +47,6 @@ class AppointmentDoctor(Resource):
                 return BaseResponse.ok_response('Successful.', appointment.json(role_id=1))
             return BaseResponse.bad_request_response('Appointment does not exists.', {})
         else:
-            doctor = DoctorModel.find_by_id(_id)
             appointments = list(map(lambda x: x.json(role_id=1), doctor.appointments))
 
             return BaseResponse.ok_response('Successful.', appointments)
@@ -147,7 +147,8 @@ class AppointmentPatient(Resource):
 
     @jwt_required
     def get(self, _id=None, appointment_id=None):
-        if PatientModel.find_by_id(_id) is None:
+        patient = PatientModel.find_by_id(_id)
+        if patient is None:
             return BaseResponse.bad_request_response('Patient does not exists.', {})
 
         if appointment_id:
@@ -156,7 +157,6 @@ class AppointmentPatient(Resource):
                 return BaseResponse.ok_response('Successful.', appointment.json(role_id=2))
             return BaseResponse.bad_request_response('Appointment does not exists.', {})
         else:
-            patient = PatientModel.find_by_id(_id)
             appointments = list(map(lambda x: x.json(role_id=2), patient.appointments))
 
             return BaseResponse.ok_response('Successful.', appointments)
