@@ -1,6 +1,5 @@
 from datetime import datetime
 
-from flask.globals import request
 from flask_jwt_extended.view_decorators import jwt_required
 from flask_restful import Resource, reqparse
 from app.models.BaseClasses import BaseResponse
@@ -39,9 +38,9 @@ class MembershipDoctor(Resource):
             return BaseResponse.bad_request_response('Doctor does not exists.', {})
 
         if _id:
-            memberships = MembershipModel.find_by_patient_id(_id)
-            if memberships:
-                return BaseResponse.ok_response('Successful.', memberships.json(role_id=1))
+            membership = MembershipModel.find_by_patient_id(_id)
+            if membership:
+                return BaseResponse.ok_response('Successful.', membership.json(role_id=1))
             return BaseResponse.bad_request_response('Membership does not exists.', {})
         else:
             memberships = list(map(lambda x: x.json(role_id=1), doctor.memberships))
@@ -52,9 +51,18 @@ class MembershipDoctor(Resource):
     def post(self, doctor_id=None):
         try:
             data = MembershipDoctor.parser.parse_args()
+            supposed_membership = MembershipModel.find_by_doctor_id(doctor_id)
 
             if DoctorModel.find_by_id(doctor_id) is None:
                 return BaseResponse.bad_request_response('Doctor does not exists.', {})
+            elif supposed_membership.patientId == data['patientId']:
+                if supposed_membership.status == 'INA':
+                    supposed_membership.status = 'ACT'
+
+                    supposed_membership.save_to_db()
+
+                    return BaseResponse.ok_response('Membership activated.', supposed_membership.json(role_id=1))
+                return BaseResponse.bad_request_response('A membership with this patient already exists.', {})
 
             membership = MembershipModel(doctor_id=doctor_id, patient_id=data['patientId'],
                                          referenced_email=data['referencedEmail'], access_code=None, created_at=None,
@@ -143,10 +151,9 @@ class MembershipPatient(Resource):
             return BaseResponse.bad_request_response('Patient does not exists.', {})
 
         if _id:
-            memberships = MembershipModel.find_by_doctor_id(_id)
-            if memberships:
-                membership_list = list(map(lambda x: x.json(role_id=2), memberships))
-                return BaseResponse.ok_response('Successful.', membership_list)
+            membership = MembershipModel.find_by_doctor_id(_id)
+            if membership:
+                return BaseResponse.ok_response('Successful.', membership.json(role_id=2))
             return BaseResponse.bad_request_response('Membership does not exists.', {})
         else:
             memberships = list(map(lambda x: x.json(role_id=2), patient.memberships))

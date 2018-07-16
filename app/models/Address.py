@@ -10,7 +10,8 @@ class AddressModel(db.Model, BaseMethods):
     id = db.Column(db.Integer, primary_key=True)
 
     # Relationships
-    districtId = db.Column(db.Integer, db.ForeignKey('districts.id'), nullable=False)
+    districtId = db.Column(db.Integer, db.ForeignKey('districts.id', onupdate='CASCADE', ondelete='CASCADE')
+                           , nullable=False)
     district = db.relationship('DistrictModel')
     doctors = db.relationship('DoctorModel', lazy='dynamic')
 

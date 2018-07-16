@@ -41,7 +41,8 @@ class Doctor(Resource):
 
             return BaseResponse.ok_response('Successful.', doctors)
 
-    def post(self):
+    @staticmethod
+    def post():
         try:
             data = Doctor.parser.parse_args()
 

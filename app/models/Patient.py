@@ -26,7 +26,7 @@ class PatientModel(db.Model, BaseMethods):
     height = db.Column(db.Numeric(9, 3))
     createdAt = db.Column(db.DateTime, nullable=False)
     updatedOn = db.Column(db.DateTime)
-    status = db.Column(db.String(3))
+    status = db.Column(db.String(3), server_default='ACT')
 
     def __init__(self, user_id, plan_id, age, blood_type, weight, sex, height, created_at, updated_on, status):
         super(PatientModel, self).__init__()

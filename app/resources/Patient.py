@@ -54,10 +54,9 @@ class Patient(Resource):
 
             return BaseResponse.ok_response('Successful.', patients)
 
-    def post(self):
+    @staticmethod
+    def post():
         data = Patient.parser.parse_args()
-
-        pa = PatientModel.find_by_user_id(data['userId'])
 
         if PatientModel.find_by_user_id(data['userId']):
             return BaseResponse.bad_request_response('This patient already exists.', {})

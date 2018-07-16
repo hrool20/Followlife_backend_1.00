@@ -40,7 +40,8 @@ class Login(Resource):
                 user = UserModel.find_by_phone(data['phoneNumber'])
                 pass
 
-            if data['lastIPConnection'] and DeviceModel.find_by_ip(data['lastIPConnection']) is None:
+            if data['lastIPConnection'] and DeviceModel.find_by_ip(data['lastIPConnection']) is None \
+                    and user is not None:
                 user.lastIPConnection = data['lastIPConnection'] if (data['lastIPConnection'] is not None) \
                     else user.lastIPConnection
                 user.save_to_db()

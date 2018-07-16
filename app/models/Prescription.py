@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from app.db import db
 from app.models.BaseClasses import BaseMethods
@@ -41,7 +41,8 @@ class PrescriptionModel(db.Model, BaseMethods):
         self.description = description
         self.createdAt = datetime.now().strftime('%Y-%m-%d %H:%M:%S') if (created_at is None) else created_at
         self.startedAt = started_at
-        self.finishedAt = finished_at
+        self.finishedAt = (self.startedAt + timedelta(days=duration_in_days)).strftime('%Y-%m-%d %H:%M:%S') \
+            if (finished_at is None) else finished_at
         self.status = status
 
     def __repr__(self):
@@ -74,3 +75,7 @@ class PrescriptionModel(db.Model, BaseMethods):
                 'finishedAt': self.finishedAt,
                 'status': self.status
             }
+
+    @classmethod
+    def find_by_doctor_and_patient_id(cls, doctor_id, patient_id):
+        return cls.query.filter_by(doctorId=doctor_id).filter_by(patientId=patient_id).all()

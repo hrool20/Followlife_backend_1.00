@@ -22,7 +22,7 @@ class DoctorModel(db.Model, BaseMethods):
     memberships = db.relationship('MembershipModel', lazy='dynamic')
     prescriptions = db.relationship('PrescriptionModel', lazy='dynamic')
 
-    doctorIdentification = db.Column(db.String(10), nullable=False)
+    doctorIdentification = db.Column(db.String(20), nullable=False)
     createdAt = db.Column(db.DateTime, nullable=False)
     updatedOn = db.Column(db.DateTime)
     status = db.Column(db.String(3), server_default='ACT')

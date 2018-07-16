@@ -5,7 +5,6 @@ from flask_jwt_extended.view_decorators import jwt_required
 from flask_restful import Resource, reqparse
 from app.models.BaseClasses import BaseResponse
 from app.models.Address import AddressModel
-from app.models.Doctor import DoctorModel
 
 
 class Address(Resource):

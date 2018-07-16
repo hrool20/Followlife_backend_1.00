@@ -10,9 +10,11 @@ class AppointmentModel(db.Model, BaseMethods):
     id = db.Column(db.Integer, primary_key=True)
 
     # Relationships
-    doctorId = db.Column(db.Integer, db.ForeignKey('doctors.id'), nullable=False)
+    doctorId = db.Column(db.Integer, db.ForeignKey('doctors.id', onupdate='CASCADE', ondelete='CASCADE')
+                         , nullable=False)
     doctor = db.relationship('DoctorModel')
-    patientId = db.Column(db.Integer, db.ForeignKey('patients.id'), nullable=False)
+    patientId = db.Column(db.Integer, db.ForeignKey('patients.id', onupdate='CASCADE', ondelete='CASCADE')
+                          , nullable=False)
     patient = db.relationship('PatientModel')
 
     appointmentDate = db.Column(db.DateTime, nullable=False)

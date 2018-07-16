@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from app.db import db
 from app.models.BaseClasses import BaseMethods
@@ -31,7 +31,8 @@ class MembershipModel(db.Model, BaseMethods):
         self.referencedEmail = referenced_email
         self.accessCode = access_code
         self.createdAt = datetime.now().strftime('%Y-%m-%d %H:%M:%S') if (created_at is None) else created_at
-        self.expiresAt = expires_at
+        self.expiresAt = (datetime.now() + timedelta(hours=24)).strftime('%Y-%m-%d %H:%M:%S') if (expires_at is None) \
+            else expires_at
         self.updatedOn = datetime.now().strftime('%Y-%m-%d %H:%M:%S') if (updated_on is None) else updated_on
         self.status = status
 
@@ -60,8 +61,8 @@ class MembershipModel(db.Model, BaseMethods):
 
     @classmethod
     def find_by_patient_id(cls, patient_id):
-        return cls.query.filter_by(patientId=patient_id).all()
+        return cls.query.filter_by(patientId=patient_id).first()
 
     @classmethod
     def find_by_doctor_id(cls, doctor_id):
-        return cls.query.filter_by(doctorId=doctor_id).all()
+        return cls.query.filter_by(doctorId=doctor_id).first()

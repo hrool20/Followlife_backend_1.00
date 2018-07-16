@@ -31,7 +31,7 @@ class AppointmentDoctor(Resource):
                         required=False,
                         help='This field cannot be left blank.')
     parser.add_argument('canceledAt',
-                        type=datetime,
+                        type=unicode,
                         required=False,
                         help='This field cannot be left blank.')
 
