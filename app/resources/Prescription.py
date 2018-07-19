@@ -76,10 +76,11 @@ class PrescriptionDoctor(Resource):
                 return BaseResponse.bad_request_response('Patient does not exists.', {})
 
             prescription = PrescriptionModel(doctor_id=doctor_id, patient_id=patient_id,
-                                             prescription_type_id=data['prescriptionType'], frequency=data['frequency'],
-                                             quantity=data['quantity'], duration_in_days=data['durationInDays'],
-                                             description=data['description'], created_at=None,
-                                             started_at=data['startedAt'], finished_at=None, status=None)
+                                             prescription_type_id=data['prescriptionTypeId'],
+                                             frequency=data['frequency'], quantity=data['quantity'],
+                                             duration_in_days=data['durationInDays'], description=data['description'],
+                                             created_at=None, started_at=data['startedAt'], finished_at=None,
+                                             status=None)
 
             prescription.save_to_db()
 

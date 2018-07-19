@@ -41,8 +41,8 @@ class PrescriptionModel(db.Model, BaseMethods):
         self.description = description
         self.createdAt = datetime.now().strftime('%Y-%m-%d %H:%M:%S') if (created_at is None) else created_at
         self.startedAt = started_at
-        self.finishedAt = (self.startedAt + timedelta(days=duration_in_days)).strftime('%Y-%m-%d %H:%M:%S') \
-            if (finished_at is None) else finished_at
+        self.finishedAt = (datetime.strptime(started_at, '%Y-%m-%d %H:%M:%S') + timedelta(days=duration_in_days))\
+            .strftime('%Y-%m-%d %H:%M:%S') if (finished_at is None) else finished_at
         self.status = status
 
     def __repr__(self):

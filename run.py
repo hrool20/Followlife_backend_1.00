@@ -117,11 +117,12 @@ def load_tables():
 
     # Plan
     if PlanModel.query.first() is None:
-        plan1 = PlanModel('General Patient', 'GEP', 'You can be monitored by your doctor through the application', None, 0)
+        plan1 = PlanModel('General Patient', 'GEP', 'You can be monitored by your doctor through the application',
+                          None, 0)
         plan2 = PlanModel('Premium Patient', 'PRP', 'You can sync your wearable with the application', None, 9.99)
         plan3 = PlanModel('General Doctor', 'GED', 'You can take care of 10 patients', 10, 39.99)
-        plan4 = PlanModel('Premium Doctor', 'PRD', 'You can take care of 20 patients and grant access to dashboard.', 20,
-                          59.99)
+        plan4 = PlanModel('Premium Doctor', 'PRD', 'You can take care of 20 patients and grant access to dashboard.',
+                          20, 59.99)
         plan5 = PlanModel('Extra Plan', 'EXT', 'You can add 10 more patients to your plan', 10, 9.99)
 
         plans = [plan1, plan2, plan3, plan4, plan5]
@@ -177,9 +178,10 @@ def load_tables():
         med_spec30 = MedicalSpecialityModel('Urology', 'URO')
 
         med_specialities = [med_spec1, med_spec2, med_spec3, med_spec4, med_spec5, med_spec6, med_spec7, med_spec8,
-                            med_spec9, med_spec10, med_spec11, med_spec12, med_spec13, med_spec14, med_spec15, med_spec16,
-                            med_spec17, med_spec18, med_spec19, med_spec20, med_spec21, med_spec22, med_spec23, med_spec24,
-                            med_spec25, med_spec26, med_spec27, med_spec28, med_spec29, med_spec30]
+                            med_spec9, med_spec10, med_spec11, med_spec12, med_spec13, med_spec14, med_spec15,
+                            med_spec16, med_spec17, med_spec18, med_spec19, med_spec20, med_spec21, med_spec22,
+                            med_spec23, med_spec24, med_spec25, med_spec26, med_spec27, med_spec28, med_spec29,
+                            med_spec30]
 
         for obj_med_spec in med_specialities:
             obj_med_spec.save_to_db()
@@ -220,7 +222,8 @@ def load_tables():
         unit_of_m16 = UnitOfMeasureModel('Liter', 'l')
 
         units_of_m = [unit_of_m1, unit_of_m2, unit_of_m3, unit_of_m4, unit_of_m5, unit_of_m6, unit_of_m7, unit_of_m8,
-                      unit_of_m9, unit_of_m10, unit_of_m11, unit_of_m12, unit_of_m13, unit_of_m14, unit_of_m15, unit_of_m16]
+                      unit_of_m9, unit_of_m10, unit_of_m11, unit_of_m12, unit_of_m13, unit_of_m14, unit_of_m15,
+                      unit_of_m16]
 
         for obj_unit_of_m in units_of_m:
             obj_unit_of_m.save_to_db()
@@ -229,14 +232,18 @@ def load_tables():
 
     # User
     if UserModel.query.first() is None:
-        user1 = UserModel(1, 'admin', 'admin', 'Hugo Andres', 'Rosado Oliden', '944479181', None, '01.02.03.04', None,
-                          None, None)
-        user2 = UserModel(1, 'dani@hotmail.com', '123456', 'Dani Alonso', 'Romera Alves', '987654321', None,
-                          '04.03.02.01', None, None, None)
-        user3 = UserModel(2, 'patient@hotmail.com', '123456', 'José María', 'Zapata Gimenez', '91827364', None,
-                          '05.06.07.08', None, None, None)
-        user4 = UserModel(2, 'patient', 'patient', 'Rosa Luz', 'Ramirez Falcón', '647382915', None, '08.07.06.05', None,
-                          None, None)
+        user1 = UserModel(1, 'admin',
+                          'pbkdf2:sha256:50$XJfN5axB$9085ca50638eb956ab238f650b11896a6810887fa3e13f063406b838ddc1ff3b',
+                          'Hugo Andres', 'Rosado Oliden', '944479181', None, '01.02.03.04', None, None, None)
+        user2 = UserModel(1, 'dani@hotmail.com',
+                          'pbkdf2:sha256:50$6N2VRxhu$15d2e00aecff3ab9a797532efa8e11129f6c6ada6157fbbeef8818efb1ad9bcf',
+                          'Dani Alonso', 'Romera Alves', '987654321', None, '04.03.02.01', None, None, None)
+        user3 = UserModel(2, 'patient@hotmail.com',
+                          'pbkdf2:sha256:50$6N2VRxhu$15d2e00aecff3ab9a797532efa8e11129f6c6ada6157fbbeef8818efb1ad9bcf',
+                          'José María', 'Zapata Giménez', '91827364', None, '05.06.07.08', None, None, None)
+        user4 = UserModel(2, 'patient',
+                          'pbkdf2:sha256:50$4wQeHHga$4b178248f66a23a25ab58c32ecc982a8ad7602e4bcf51406ce01908910b8bd42',
+                          'Rosa Luz', 'Ramirez Falcón', '647382915', None, '08.07.06.05', None, None, None)
 
         users = [user1, user2, user3, user4]
 

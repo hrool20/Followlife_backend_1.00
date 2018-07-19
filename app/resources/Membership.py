@@ -180,7 +180,7 @@ class MembershipPatient(Resource):
 
                 membership.save_to_db()
 
-                return BaseResponse.created_response('Membership updated successfully.', membership.json(role_id=1))
+                return BaseResponse.created_response('Membership updated successfully.', membership.json(role_id=2))
             else:
                 return BaseResponse.not_acceptable_response('Membership does not exists.', {})
         except Exception as e:
