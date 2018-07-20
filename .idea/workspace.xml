@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/resources/District.py" afterPath="$PROJECT_DIR$/app/resources/District.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/DevelopmentEnvironment.py" afterPath="$PROJECT_DIR$/config/DevelopmentEnvironment.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,16 +22,31 @@
       <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="231" column="0" lean-forward="true" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+            <state relative-caret-position="402">
+              <caret line="351" column="5" lean-forward="true" selection-start-line="351" selection-start-column="5" selection-end-line="351" selection-end-column="5" />
               <folding>
                 <element signature="e#15#48#0" expanded="true" />
-                <element signature="e#1769#5910#0" expanded="false" />
-                <element signature="e#6792#6998#0" expanded="false" />
-                <element signature="e#9780#10292#0" expanded="false" />
-                <element signature="e#13002#13281#0" expanded="false" />
-                <element signature="e#13348#13661#0" expanded="false" />
+                <element signature="e#1718#13682#0" expanded="false" />
+                <element signature="e#1781#5922#0" expanded="false" />
+                <element signature="e#5983#6743#0" expanded="false" />
+                <element signature="e#6804#7010#0" expanded="false" />
+                <element signature="e#7098#9706#0" expanded="false" />
+                <element signature="e#9792#10304#0" expanded="false" />
+                <element signature="e#10385#11660#0" expanded="false" />
+                <element signature="e#11721#12949#0" expanded="false" />
+                <element signature="e#13014#13293#0" expanded="false" />
+                <element signature="e#13360#13673#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocalEnvironment.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/LocalEnvironment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/UserModel.py" />
         <option value="$PROJECT_DIR$/app/models/DoctorEspeciality.py" />
         <option value="$PROJECT_DIR$/app/models/UnitOfMeasurement.py" />
         <option value="$PROJECT_DIR$/app/models/Precription.py" />
@@ -141,11 +156,12 @@
         <option value="$PROJECT_DIR$/app/resources/Prescription.py" />
         <option value="$PROJECT_DIR$/app/models/Prescription.py" />
         <option value="$PROJECT_DIR$/runtime.txt" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/uwsgi.ini" />
         <option value="$PROJECT_DIR$/app/resources/District.py" />
+        <option value="$PROJECT_DIR$/config/DevelopmentEnvironment.py" />
+        <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
   </component>
@@ -198,6 +214,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Sample01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sample01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sample01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -435,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532044111168</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Error of jwt_required fixed.">
+      <created>1532046159425</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1532046159425</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -470,7 +507,8 @@
     <MESSAGE value="Majority Resources added." />
     <MESSAGE value="All endpoints added except Indicators." />
     <MESSAGE value="Some endpoints updated and required files for heroku deploy added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some endpoints updated and required files for heroku deploy added." />
+    <MESSAGE value="Error of jwt_required fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Error of jwt_required fixed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -486,20 +524,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/flask_restful/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -795,14 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/resources/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runtime.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -845,17 +861,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/resources/Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/LocalEnvironment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/DevelopmentEnvironment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="231" column="0" lean-forward="true" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+        <state relative-caret-position="402">
+          <caret line="351" column="5" lean-forward="true" selection-start-line="351" selection-start-column="5" selection-end-line="351" selection-end-column="5" />
           <folding>
             <element signature="e#15#48#0" expanded="true" />
-            <element signature="e#1769#5910#0" expanded="false" />
-            <element signature="e#6792#6998#0" expanded="false" />
-            <element signature="e#9780#10292#0" expanded="false" />
-            <element signature="e#13002#13281#0" expanded="false" />
-            <element signature="e#13348#13661#0" expanded="false" />
+            <element signature="e#1718#13682#0" expanded="false" />
+            <element signature="e#1781#5922#0" expanded="false" />
+            <element signature="e#5983#6743#0" expanded="false" />
+            <element signature="e#6804#7010#0" expanded="false" />
+            <element signature="e#7098#9706#0" expanded="false" />
+            <element signature="e#9792#10304#0" expanded="false" />
+            <element signature="e#10385#11660#0" expanded="false" />
+            <element signature="e#11721#12949#0" expanded="false" />
+            <element signature="e#13014#13293#0" expanded="false" />
+            <element signature="e#13360#13673#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -29,14 +29,14 @@ from app.resources.Login import Login
 from config.DevelopmentEnvironment import DevelopmentEnvironment
 from config.LocalEnvironment import LocalEnvironment
 
-APP_CONFIG_FILE = '../config/LocalEnvironment.py'
+APP_CONFIG_FILE = '../config/DevelopmentEnvironment.py'
 
 app_config = {
     'local': LocalEnvironment,
     'development': DevelopmentEnvironment
 }
 
-app = create_app(app_config['local'], APP_CONFIG_FILE)
+app = create_app(app_config['development'], APP_CONFIG_FILE)
 api = Api(app)
 migrate = Migrate(app, db)
 
@@ -353,4 +353,4 @@ api.add_resource(Login, '/api/v1/login',
 
 if __name__ == '__main__':
     db.init_app(app)
-    app.run(debug=True)
+    app.run(debug=app_config['development'].DEBUG)
