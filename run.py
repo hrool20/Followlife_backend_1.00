@@ -1,7 +1,17 @@
+# coding=utf-8
 from flask_migrate import Migrate
 
 from app import app
 from apps.db import db
+from apps.models.District import DistrictModel
+from apps.models.Doctor import DoctorModel
+from apps.models.MedicalSpeciality import MedicalSpecialityModel
+from apps.models.Patient import PatientModel
+from apps.models.Plan import PlanModel
+from apps.models.PrescriptionType import PrescriptionTypeModel
+from apps.models.Role import RoleModel
+from apps.models.UnitsOfMeasure import UnitOfMeasureModel
+from apps.models.User import UserModel
 
 db.init_app(app=app)
 
@@ -10,6 +20,9 @@ migrate = Migrate(app, db)
 
 
 def load_tables():
+    db.engine.execute("SET @@auto_increment_increment=1;")
+    db.engine.execute("SET @@auto_increment_offset=1;")
+
     # District
     if DistrictModel.query.first() is None:
         district1 = DistrictModel('Callao', 'CAL')

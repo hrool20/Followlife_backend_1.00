@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-673">
-              <caret line="300" column="0" lean-forward="false" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
               <folding>
                 <element signature="e#15#45#0" expanded="true" />
                 <element signature="e#1658#2122#0" expanded="false" />
@@ -40,23 +40,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="-841">
+              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
-                <element signature="e#170#12134#0" expanded="false" />
-                <element signature="e#233#4374#0" expanded="false" />
-                <element signature="e#4435#5195#0" expanded="false" />
-                <element signature="e#5256#5462#0" expanded="false" />
-                <element signature="e#5550#8158#0" expanded="false" />
-                <element signature="e#8244#8756#0" expanded="false" />
-                <element signature="e#8837#10112#0" expanded="false" />
-                <element signature="e#10173#11401#0" expanded="false" />
-                <element signature="e#11466#11745#0" expanded="false" />
-                <element signature="e#11812#12125#0" expanded="false" />
+                <element signature="e#15#48#0" expanded="true" />
+                <element signature="e#802#4943#0" expanded="false" />
+                <element signature="e#5004#5764#0" expanded="false" />
+                <element signature="e#5825#6031#0" expanded="false" />
+                <element signature="e#6119#8727#0" expanded="false" />
+                <element signature="e#8813#9325#0" expanded="false" />
+                <element signature="e#9406#10681#0" expanded="false" />
+                <element signature="e#10742#11970#0" expanded="false" />
+                <element signature="e#12035#12314#0" expanded="false" />
+                <element signature="e#12381#12694#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -162,9 +161,9 @@
         <option value="$PROJECT_DIR$/app/app.py" />
         <option value="$PROJECT_DIR$/apps/app.py" />
         <option value="$PROJECT_DIR$/uwsgi.ini" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/apps/models/Address.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
   </component>
@@ -526,11 +525,19 @@
       <option name="project" value="LOCAL" />
       <updated>1532056111944</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="moving &quot;migrate&quot;.">
+      <created>1532056287311</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1532056287311</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19635417" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -542,7 +549,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33040616" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35784853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35784853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -575,7 +582,8 @@
     <MESSAGE value="Re-structure of project." />
     <MESSAGE value="run.py deleted and added again." />
     <MESSAGE value="&quot;app.py&quot; and &quot;run.py&quot; updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;app.py&quot; and &quot;run.py&quot; updated." />
+    <MESSAGE value="moving &quot;migrate&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="moving &quot;migrate&quot;." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1009,30 +1017,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-            <element signature="e#170#12134#0" expanded="false" />
-            <element signature="e#233#4374#0" expanded="false" />
-            <element signature="e#4435#5195#0" expanded="false" />
-            <element signature="e#5256#5462#0" expanded="false" />
-            <element signature="e#5550#8158#0" expanded="false" />
-            <element signature="e#8244#8756#0" expanded="false" />
-            <element signature="e#8837#10112#0" expanded="false" />
-            <element signature="e#10173#11401#0" expanded="false" />
-            <element signature="e#11466#11745#0" expanded="false" />
-            <element signature="e#11812#12125#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-673">
-          <caret line="300" column="0" lean-forward="false" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
           <folding>
             <element signature="e#15#45#0" expanded="true" />
             <element signature="e#1658#2122#0" expanded="false" />
@@ -1045,6 +1033,25 @@
             <element signature="e#11271#12546#0" expanded="false" />
             <element signature="e#13900#14179#0" expanded="false" />
             <element signature="e#14246#14559#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-841">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding>
+            <element signature="e#15#48#0" expanded="true" />
+            <element signature="e#802#4943#0" expanded="false" />
+            <element signature="e#5004#5764#0" expanded="false" />
+            <element signature="e#5825#6031#0" expanded="false" />
+            <element signature="e#6119#8727#0" expanded="false" />
+            <element signature="e#8813#9325#0" expanded="false" />
+            <element signature="e#9406#10681#0" expanded="false" />
+            <element signature="e#10742#11970#0" expanded="false" />
+            <element signature="e#12035#12314#0" expanded="false" />
+            <element signature="e#12381#12694#0" expanded="false" />
           </folding>
         </state>
       </provider>
