@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="">
+    <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="Try to fix an error while deploying on heroku.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.py" afterPath="$PROJECT_DIR$/app/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,23 +18,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="84">
+              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
               <folding>
-                <element signature="e#534#12498#0" expanded="false" />
-                <element signature="e#597#4738#0" expanded="false" />
-                <element signature="e#4799#5559#0" expanded="false" />
-                <element signature="e#5620#5826#0" expanded="false" />
-                <element signature="e#5914#8522#0" expanded="false" />
-                <element signature="e#8608#9120#0" expanded="false" />
-                <element signature="e#9201#10476#0" expanded="false" />
-                <element signature="e#10537#11765#0" expanded="false" />
-                <element signature="e#11830#12109#0" expanded="false" />
-                <element signature="e#12176#12489#0" expanded="false" />
+                <element signature="e#533#12497#0" expanded="false" />
+                <element signature="e#596#4737#0" expanded="false" />
+                <element signature="e#4798#5558#0" expanded="false" />
+                <element signature="e#5619#5825#0" expanded="false" />
+                <element signature="e#5913#8521#0" expanded="false" />
+                <element signature="e#8607#9119#0" expanded="false" />
+                <element signature="e#9200#10475#0" expanded="false" />
+                <element signature="e#10536#11764#0" expanded="false" />
+                <element signature="e#11829#12108#0" expanded="false" />
+                <element signature="e#12175#12488#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/db.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
@@ -191,9 +201,9 @@
         <option value="$PROJECT_DIR$/app/resources/District.py" />
         <option value="$PROJECT_DIR$/config/DevelopmentEnvironment.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/app.py" />
+        <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
   </component>
@@ -514,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532048716877</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Try to fix an error while deploying on heroku.">
+      <created>1532049194380</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1532049194380</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -528,9 +545,9 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33040616" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33040616" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35784853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35784853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -559,7 +576,8 @@
     <MESSAGE value="Import's error in &quot;run.py&quot; fixed." />
     <MESSAGE value="&quot;__init__.py&quot; empty." />
     <MESSAGE value="Environment links updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="Environment links updated." />
+    <MESSAGE value="Try to fix an error while deploying on heroku." />
+    <option name="LAST_COMMIT_MESSAGE" value="Try to fix an error while deploying on heroku." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -575,13 +593,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/Lib/site-packages/flask_jwt_extended/view_decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/flask_jwt_extended/jwt_manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -969,25 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <element signature="e#534#12498#0" expanded="false" />
-            <element signature="e#597#4738#0" expanded="false" />
-            <element signature="e#4799#5559#0" expanded="false" />
-            <element signature="e#5620#5826#0" expanded="false" />
-            <element signature="e#5914#8522#0" expanded="false" />
-            <element signature="e#8608#9120#0" expanded="false" />
-            <element signature="e#9201#10476#0" expanded="false" />
-            <element signature="e#10537#11765#0" expanded="false" />
-            <element signature="e#11830#12109#0" expanded="false" />
-            <element signature="e#12176#12489#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1010,6 +1002,33 @@
           <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding>
+            <element signature="e#533#12497#0" expanded="false" />
+            <element signature="e#596#4737#0" expanded="false" />
+            <element signature="e#4798#5558#0" expanded="false" />
+            <element signature="e#5619#5825#0" expanded="false" />
+            <element signature="e#5913#8521#0" expanded="false" />
+            <element signature="e#8607#9119#0" expanded="false" />
+            <element signature="e#9200#10475#0" expanded="false" />
+            <element signature="e#10536#11764#0" expanded="false" />
+            <element signature="e#11829#12108#0" expanded="false" />
+            <element signature="e#12175#12488#0" expanded="false" />
           </folding>
         </state>
       </provider>

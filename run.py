@@ -1,6 +1,6 @@
 # coding=utf-8
 from app.app import app
-from app.app import db
+from app.db import db
 from app.models.District import DistrictModel
 from app.models.Doctor import DoctorModel
 from app.models.MedicalSpeciality import MedicalSpecialityModel
