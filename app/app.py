@@ -39,7 +39,7 @@ app_config = {
 def configure_environment(flask_app, my_env, my_path):
     # MySQL configurations
     flask_app.config.from_object(my_env)
-    flask_app.config.from_pyfile('Config.py', silent=False)
+    # flask_app.config.from_pyfile('Config.py', silent=False)
     flask_app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
     flask_app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://' + my_env.DATABASE_USER + ':' + \
                                                   my_env.DATABASE_PASSWORD + '@' + my_env.DATABASE_HOST + '/' + \
@@ -139,7 +139,7 @@ api.add_resource(Login, '/api/v1/login',
                  '/api/v1/auth')
 
 if __name__ == '__main__':
-    from app.db import db
+    from db import db
     db.init_app(app)
     migrate = Migrate(app, db)
     app.run(debug=app_config['development'].DEBUG)

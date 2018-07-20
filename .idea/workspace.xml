@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="&quot;__init__.py&quot; empty.">
+    <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.py" afterPath="$PROJECT_DIR$/app/app.py" />
     </list>
@@ -52,8 +52,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="320">
+              <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -507,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532048545803</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Environment links updated.">
+      <created>1532048716877</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1532048716877</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -551,7 +558,8 @@
     <MESSAGE value="&quot;app.py&quot; created and &quot;run.py&quot; changed." />
     <MESSAGE value="Import's error in &quot;run.py&quot; fixed." />
     <MESSAGE value="&quot;__init__.py&quot; empty." />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;__init__.py&quot; empty." />
+    <MESSAGE value="Environment links updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Environment links updated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -998,8 +1006,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="320">
+          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
