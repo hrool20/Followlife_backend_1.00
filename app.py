@@ -6,7 +6,6 @@ from flask_jwt_extended.jwt_manager import JWTManager
 from flask_migrate import Migrate
 from flask_restful import Api
 
-from apps.db import db
 from apps.models.BaseClasses import BaseResponse
 from apps.resources.Address import Address
 from apps.resources.Appointment import AppointmentDoctor, AppointmentPatient
@@ -55,7 +54,6 @@ app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=24)
 # noinspection PyTypeChecker
 api = Api(app)
 jwt = JWTManager(app)
-migrate = Migrate(app, db)
 
 
 def load_tables():
@@ -387,5 +385,7 @@ api.add_resource(Login, '/api/v1/login',
                  '/api/v1/auth')
 
 if __name__ == '__main__':
+    from apps.db import db
     db.init_app(app)
+    migrate = Migrate(app, db)
     app.run(debug=app_config['env'].DEBUG)
