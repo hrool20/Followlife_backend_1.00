@@ -6,16 +6,6 @@ from flask_jwt_extended.jwt_manager import JWTManager
 from app.models.BaseClasses import BaseResponse
 
 
-def configure_environment(flask_app, my_env, my_path):
-    # MySQL configurations
-    flask_app.config.from_object(my_env)
-    flask_app.config.from_pyfile('../Config.py', silent=False)
-    flask_app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-    flask_app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://' + my_env.DATABASE_USER + ':' + \
-                                                  my_env.DATABASE_PASSWORD + '@' + my_env.DATABASE_HOST + '/' + \
-                                                  my_env.DATABASE_DB
-
-
 def create_app(my_env, app_config_file):
     app = Flask(__name__, instance_relative_config=True)
     configure_environment(app, my_env, app_config_file)
