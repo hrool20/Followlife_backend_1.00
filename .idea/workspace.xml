@@ -1,87 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="">
+    <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="Re-structure of project.">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/run.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/click/utils.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/click/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/blueprints.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/blueprints.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/cli.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/cli.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/config.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/ctx.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/ctx.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/debughelpers.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/debughelpers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/globals.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/globals.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/helpers.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/helpers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/json/__init__.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/json/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/json/tag.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/json/tag.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/logging.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/logging.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/sessions.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/sessions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/testing.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/testing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/views.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/wrappers.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/wrappers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/__init__.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/bccache.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/bccache.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_internal/locations.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_internal/locations.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_internal/utils/appdirs.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_internal/utils/appdirs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/appdirs.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/appdirs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/pkg_resources/__init__.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/pkg_resources/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/__init__.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/appdirs.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/_vendor/appdirs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/contrib/cache.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/contrib/cache.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/contrib/fixers.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/contrib/fixers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/contrib/lint.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/contrib/lint.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/contrib/profiler.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/contrib/profiler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/contrib/sessions.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/contrib/sessions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/debug/__init__.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/debug/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/script.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/script.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/serving.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/serving.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/test.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wsgi.py" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wsgi.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="$PROJECT_DIR$/apps/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/app.py" afterPath="$PROJECT_DIR$/apps/app.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/auth.py" afterPath="$PROJECT_DIR$/apps/auth.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/db.py" afterPath="$PROJECT_DIR$/apps/db.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Address.py" afterPath="$PROJECT_DIR$/apps/models/Address.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Appointment.py" afterPath="$PROJECT_DIR$/apps/models/Appointment.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/BaseClasses.py" afterPath="$PROJECT_DIR$/apps/models/BaseClasses.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Device.py" afterPath="$PROJECT_DIR$/apps/models/Device.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/District.py" afterPath="$PROJECT_DIR$/apps/models/District.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Doctor.py" afterPath="$PROJECT_DIR$/apps/models/Doctor.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/DoctorSpeciality.py" afterPath="$PROJECT_DIR$/apps/models/DoctorSpeciality.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Indicator.py" afterPath="$PROJECT_DIR$/apps/models/Indicator.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/IndicatorEntry.py" afterPath="$PROJECT_DIR$/apps/models/IndicatorEntry.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/IndicatorType.py" afterPath="$PROJECT_DIR$/apps/models/IndicatorType.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/MedicalSpeciality.py" afterPath="$PROJECT_DIR$/apps/models/MedicalSpeciality.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Membership.py" afterPath="$PROJECT_DIR$/apps/models/Membership.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Patient.py" afterPath="$PROJECT_DIR$/apps/models/Patient.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Plan.py" afterPath="$PROJECT_DIR$/apps/models/Plan.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Prescription.py" afterPath="$PROJECT_DIR$/apps/models/Prescription.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/PrescriptionType.py" afterPath="$PROJECT_DIR$/apps/models/PrescriptionType.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/Role.py" afterPath="$PROJECT_DIR$/apps/models/Role.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/UnitsOfMeasure.py" afterPath="$PROJECT_DIR$/apps/models/UnitsOfMeasure.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/User.py" afterPath="$PROJECT_DIR$/apps/models/User.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/__init__.py" afterPath="$PROJECT_DIR$/apps/models/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Address.py" afterPath="$PROJECT_DIR$/apps/resources/Address.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Appointment.py" afterPath="$PROJECT_DIR$/apps/resources/Appointment.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Device.py" afterPath="$PROJECT_DIR$/apps/resources/Device.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/District.py" afterPath="$PROJECT_DIR$/apps/resources/District.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Doctor.py" afterPath="$PROJECT_DIR$/apps/resources/Doctor.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/DoctorSpeciality.py" afterPath="$PROJECT_DIR$/apps/resources/DoctorSpeciality.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Indicator.py" afterPath="$PROJECT_DIR$/apps/resources/Indicator.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/IndicatorEntry.py" afterPath="$PROJECT_DIR$/apps/resources/IndicatorEntry.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/IndicatorType.py" afterPath="$PROJECT_DIR$/apps/resources/IndicatorType.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Login.py" afterPath="$PROJECT_DIR$/apps/resources/Login.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/MedicalSpeciality.py" afterPath="$PROJECT_DIR$/apps/resources/MedicalSpeciality.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Membership.py" afterPath="$PROJECT_DIR$/apps/resources/Membership.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Patient.py" afterPath="$PROJECT_DIR$/apps/resources/Patient.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Plan.py" afterPath="$PROJECT_DIR$/apps/resources/Plan.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Prescription.py" afterPath="$PROJECT_DIR$/apps/resources/Prescription.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/PrescriptionType.py" afterPath="$PROJECT_DIR$/apps/resources/PrescriptionType.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/Role.py" afterPath="$PROJECT_DIR$/apps/resources/Role.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/UnitsOfMeasure.py" afterPath="$PROJECT_DIR$/apps/resources/UnitsOfMeasure.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/User.py" afterPath="$PROJECT_DIR$/apps/resources/User.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/resources/__init__.py" afterPath="$PROJECT_DIR$/apps/resources/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/app.py" afterPath="$PROJECT_DIR$/apps/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uwsgi.ini" afterPath="$PROJECT_DIR$/uwsgi.ini" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,28 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#15#39#0" expanded="true" />
-                <element signature="e#544#12508#0" expanded="false" />
-                <element signature="e#607#4748#0" expanded="false" />
-                <element signature="e#4809#5569#0" expanded="false" />
-                <element signature="e#5630#5836#0" expanded="false" />
-                <element signature="e#5924#8532#0" expanded="false" />
-                <element signature="e#8618#9130#0" expanded="false" />
-                <element signature="e#9211#10486#0" expanded="false" />
-                <element signature="e#10547#11775#0" expanded="false" />
-                <element signature="e#11840#12119#0" expanded="false" />
-                <element signature="e#12186#12499#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="db.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/db.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -141,9 +43,21 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="1428">
+              <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+              <folding>
+                <element signature="e#15#45#0" expanded="true" />
+                <element signature="e#2591#14555#0" expanded="false" />
+                <element signature="e#2654#6795#0" expanded="false" />
+                <element signature="e#6856#7616#0" expanded="false" />
+                <element signature="e#7677#7883#0" expanded="false" />
+                <element signature="e#7971#10579#0" expanded="false" />
+                <element signature="e#10665#11177#0" expanded="false" />
+                <element signature="e#11258#12533#0" expanded="false" />
+                <element signature="e#12594#13822#0" expanded="false" />
+                <element signature="e#13887#14166#0" expanded="false" />
+                <element signature="e#14233#14546#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -273,14 +187,14 @@
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/uwsgi.ini" />
         <option value="$PROJECT_DIR$/app/resources/District.py" />
         <option value="$PROJECT_DIR$/config/DevelopmentEnvironment.py" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/app/app.py" />
+        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/apps/app.py" />
+        <option value="$PROJECT_DIR$/uwsgi.ini" />
       </list>
     </option>
   </component>
@@ -595,11 +509,19 @@
       <option name="project" value="LOCAL" />
       <updated>1532049426313</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Re-structure of project.">
+      <created>1532049836730</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1532049836730</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19635417" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -607,11 +529,11 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33040616" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35784853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35784853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -653,7 +575,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="82" />
+      <option name="time" value="85" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1037,14 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uwsgi.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1061,6 +975,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uwsgi.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1069,31 +999,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#39#0" expanded="true" />
-            <element signature="e#544#12508#0" expanded="false" />
-            <element signature="e#607#4748#0" expanded="false" />
-            <element signature="e#4809#5569#0" expanded="false" />
-            <element signature="e#5630#5836#0" expanded="false" />
-            <element signature="e#5924#8532#0" expanded="false" />
-            <element signature="e#8618#9130#0" expanded="false" />
-            <element signature="e#9211#10486#0" expanded="false" />
-            <element signature="e#10547#11775#0" expanded="false" />
-            <element signature="e#11840#12119#0" expanded="false" />
-            <element signature="e#12186#12499#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="1428">
+          <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+            <element signature="e#2591#14555#0" expanded="false" />
+            <element signature="e#2654#6795#0" expanded="false" />
+            <element signature="e#6856#7616#0" expanded="false" />
+            <element signature="e#7677#7883#0" expanded="false" />
+            <element signature="e#7971#10579#0" expanded="false" />
+            <element signature="e#10665#11177#0" expanded="false" />
+            <element signature="e#11258#12533#0" expanded="false" />
+            <element signature="e#12594#13822#0" expanded="false" />
+            <element signature="e#13887#14166#0" expanded="false" />
+            <element signature="e#14233#14546#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
