@@ -1,4 +1,5 @@
 # coding=utf-8
+from flask_migrate import Migrate
 
 from apps.app import app
 from apps.db import db
@@ -14,6 +15,7 @@ from apps.models.User import UserModel
 
 
 db.init_app(app)
+migrate = Migrate(app, db)
 
 
 def load_tables():
