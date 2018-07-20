@@ -1,5 +1,15 @@
+# coding=utf-8
 from app.app import app
 from app.app import db
+from app.models.District import DistrictModel
+from app.models.Doctor import DoctorModel
+from app.models.MedicalSpeciality import MedicalSpecialityModel
+from app.models.Patient import PatientModel
+from app.models.Plan import PlanModel
+from app.models.PrescriptionType import PrescriptionTypeModel
+from app.models.Role import RoleModel
+from app.models.UnitsOfMeasure import UnitOfMeasureModel
+from app.models.User import UserModel
 
 db.init_app(app)
 

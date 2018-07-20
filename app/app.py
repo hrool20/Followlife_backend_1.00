@@ -1,4 +1,3 @@
-# coding=utf-8
 from datetime import timedelta
 
 from flask.app import Flask
@@ -7,26 +6,23 @@ from flask_migrate import Migrate
 from flask_restful import Api
 
 from models.BaseClasses import BaseResponse
-from models.Doctor import DoctorModel
-from models.Patient import PatientModel
-from models.User import UserModel
 from resources.Address import Address
 from resources.Appointment import AppointmentDoctor, AppointmentPatient
 from resources.Device import Device
-from resources.District import District, DistrictModel
+from resources.District import District
 from resources.Doctor import Doctor
 from resources.DoctorSpeciality import DoctorSpeciality
 from resources.Indicator import Indicator
 from resources.IndicatorEntry import IndicatorEntry
 from resources.IndicatorType import IndicatorType
-from resources.MedicalSpeciality import MedicalSpeciality, MedicalSpecialityModel
+from resources.MedicalSpeciality import MedicalSpeciality
 from resources.Membership import MembershipDoctor, MembershipPatient
 from resources.Patient import Patient
-from resources.Plan import Plan, PlanModel
+from resources.Plan import Plan
 from resources.Prescription import PrescriptionDoctor, PrescriptionPatient
-from resources.PrescriptionType import PrescriptionType, PrescriptionTypeModel
-from resources.Role import Role, RoleModel
-from resources.UnitsOfMeasure import UnitOfMeasure, UnitOfMeasureModel
+from resources.PrescriptionType import PrescriptionType
+from resources.Role import Role
+from resources.UnitsOfMeasure import UnitOfMeasure
 from resources.User import User
 from resources.Login import Login
 from config.DevelopmentEnvironment import DevelopmentEnvironment
