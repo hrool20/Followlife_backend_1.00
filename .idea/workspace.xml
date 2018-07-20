@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/alembic.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/env.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/script.py.mako" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/apps/app.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/apps/app.py" afterPath="$PROJECT_DIR$/app.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,43 +19,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/app.py">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1844">
-              <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+            <state relative-caret-position="423">
+              <caret line="394" column="4" lean-forward="false" selection-start-line="394" selection-start-column="4" selection-end-line="394" selection-end-column="4" />
               <folding>
                 <element signature="e#15#45#0" expanded="true" />
                 <element signature="e#1658#2122#0" expanded="false" />
-                <element signature="e#2488#14568#0" expanded="false" />
-                <element signature="e#2667#6808#0" expanded="false" />
-                <element signature="e#6869#7629#0" expanded="false" />
-                <element signature="e#7690#7896#0" expanded="false" />
-                <element signature="e#7984#10592#0" expanded="false" />
-                <element signature="e#10678#11190#0" expanded="false" />
-                <element signature="e#11271#12546#0" expanded="false" />
-                <element signature="e#13900#14179#0" expanded="false" />
-                <element signature="e#14246#14559#0" expanded="false" />
+                <element signature="e#7055#20052#0" expanded="false" />
+                <element signature="e#7250#11684#0" expanded="false" />
+                <element signature="e#11757#12591#0" expanded="false" />
+                <element signature="e#12664#12894#0" expanded="false" />
+                <element signature="e#12994#15754#0" expanded="false" />
+                <element signature="e#15852#16396#0" expanded="false" />
+                <element signature="e#16489#17878#0" expanded="false" />
+                <element signature="e#17951#19243#0" expanded="false" />
+                <element signature="e#19320#19623#0" expanded="false" />
+                <element signature="e#19702#20039#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="1704">
+              <caret line="262" column="28" lean-forward="false" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
               <folding>
-                <element signature="e#16#40#0" expanded="true" />
-                <element signature="e#4927#5687#0" expanded="false" />
-                <element signature="e#5748#5954#0" expanded="false" />
-                <element signature="e#6042#8650#0" expanded="false" />
-                <element signature="e#8736#9248#0" expanded="false" />
-                <element signature="e#9329#10604#0" expanded="false" />
-                <element signature="e#10665#11893#0" expanded="false" />
-                <element signature="e#11958#12237#0" expanded="false" />
-                <element signature="e#12304#12617#0" expanded="false" />
+                <element signature="e#15#48#0" expanded="true" />
+                <element signature="e#5001#5761#0" expanded="false" />
+                <element signature="e#5822#6028#0" expanded="false" />
+                <element signature="e#6116#8724#0" expanded="false" />
+                <element signature="e#8810#9322#0" expanded="false" />
+                <element signature="e#9403#10678#0" expanded="false" />
+                <element signature="e#10739#11967#0" expanded="false" />
+                <element signature="e#12032#12311#0" expanded="false" />
+                <element signature="e#12378#12691#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -175,9 +172,9 @@
         <option value="$PROJECT_DIR$/app/app.py" />
         <option value="$PROJECT_DIR$/apps/app.py" />
         <option value="$PROJECT_DIR$/apps/models/Address.py" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/uwsgi.ini" />
         <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -260,8 +257,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Python\Flask\Sample01\apps" />
       <recent name="D:\Python\Flask\Sample01" />
+      <recent name="D:\Python\Flask\Sample01\apps" />
       <recent name="D:\Python\Flask\Sample01\app" />
     </key>
   </component>
@@ -308,7 +305,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sample01" />
-      <option name="SCRIPT_NAME" value="D:\Python\Flask\Sample01\apps\app.py" />
+      <option name="SCRIPT_NAME" value="D:\Python\Flask\Sample01\app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -571,7 +568,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532057958204</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="&quot;run.py&quot; fixed.">
+      <created>1532058317464</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1532058317464</updated>
+    </task>
+    <task id="LOCAL-00026" summary="&quot;run.py&quot; fixed.">
+      <created>1532058849978</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1532058849978</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -629,13 +640,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/app.py</url>
-          <line>300</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -1051,26 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1844">
-          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#45#0" expanded="true" />
-            <element signature="e#1658#2122#0" expanded="false" />
-            <element signature="e#2488#14568#0" expanded="false" />
-            <element signature="e#2667#6808#0" expanded="false" />
-            <element signature="e#6869#7629#0" expanded="false" />
-            <element signature="e#7690#7896#0" expanded="false" />
-            <element signature="e#7984#10592#0" expanded="false" />
-            <element signature="e#10678#11190#0" expanded="false" />
-            <element signature="e#11271#12546#0" expanded="false" />
-            <element signature="e#13900#14179#0" expanded="false" />
-            <element signature="e#14246#14559#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uwsgi.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1081,18 +1065,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="1704">
+          <caret line="262" column="28" lean-forward="false" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
           <folding>
-            <element signature="e#16#40#0" expanded="true" />
-            <element signature="e#4927#5687#0" expanded="false" />
-            <element signature="e#5748#5954#0" expanded="false" />
-            <element signature="e#6042#8650#0" expanded="false" />
-            <element signature="e#8736#9248#0" expanded="false" />
-            <element signature="e#9329#10604#0" expanded="false" />
-            <element signature="e#10665#11893#0" expanded="false" />
-            <element signature="e#11958#12237#0" expanded="false" />
-            <element signature="e#12304#12617#0" expanded="false" />
+            <element signature="e#15#48#0" expanded="true" />
+            <element signature="e#5001#5761#0" expanded="false" />
+            <element signature="e#5822#6028#0" expanded="false" />
+            <element signature="e#6116#8724#0" expanded="false" />
+            <element signature="e#8810#9322#0" expanded="false" />
+            <element signature="e#9403#10678#0" expanded="false" />
+            <element signature="e#10739#11967#0" expanded="false" />
+            <element signature="e#12032#12311#0" expanded="false" />
+            <element signature="e#12378#12691#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="394" column="4" lean-forward="false" selection-start-line="394" selection-start-column="4" selection-end-line="394" selection-end-column="4" />
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+            <element signature="e#1658#2122#0" expanded="false" />
+            <element signature="e#7055#20052#0" expanded="false" />
+            <element signature="e#7250#11684#0" expanded="false" />
+            <element signature="e#11757#12591#0" expanded="false" />
+            <element signature="e#12664#12894#0" expanded="false" />
+            <element signature="e#12994#15754#0" expanded="false" />
+            <element signature="e#15852#16396#0" expanded="false" />
+            <element signature="e#16489#17878#0" expanded="false" />
+            <element signature="e#17951#19243#0" expanded="false" />
+            <element signature="e#19320#19623#0" expanded="false" />
+            <element signature="e#19702#20039#0" expanded="false" />
           </folding>
         </state>
       </provider>

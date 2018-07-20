@@ -1,7 +1,7 @@
 # coding=utf-8
 from flask_migrate import Migrate
 
-from apps.app import app
+from app import app
 from apps.db import db
 from apps.models.District import DistrictModel
 from apps.models.Doctor import DoctorModel
@@ -13,9 +13,9 @@ from apps.models.Role import RoleModel
 from apps.models.UnitsOfMeasure import UnitOfMeasureModel
 from apps.models.User import UserModel
 
-
-db.init_app(app)
-migrate = Migrate(app, db)
+my_app = app
+db.init_app(my_app)
+migrate = Migrate(my_app, db)
 
 
 def load_tables():
@@ -260,5 +260,5 @@ def load_tables():
 # It help to create tables before first request
 @app.before_first_request
 def create_tables():
-    db.create_all(app=app)
+    db.create_all(app=my_app)
     load_tables()
