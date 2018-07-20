@@ -4,7 +4,6 @@
     <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/apps/app.py" afterPath="$PROJECT_DIR$/app.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="423">
@@ -42,21 +41,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1704">
-              <caret line="262" column="28" lean-forward="false" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
+            <state relative-caret-position="150">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
                 <element signature="e#15#48#0" expanded="true" />
-                <element signature="e#5001#5761#0" expanded="false" />
-                <element signature="e#5822#6028#0" expanded="false" />
-                <element signature="e#6116#8724#0" expanded="false" />
-                <element signature="e#8810#9322#0" expanded="false" />
-                <element signature="e#9403#10678#0" expanded="false" />
-                <element signature="e#10739#11967#0" expanded="false" />
-                <element signature="e#12032#12311#0" expanded="false" />
-                <element signature="e#12378#12691#0" expanded="false" />
+                <element signature="e#624#12704#0" expanded="false" />
+                <element signature="e#803#4944#0" expanded="false" />
+                <element signature="e#5005#5765#0" expanded="false" />
+                <element signature="e#5826#6032#0" expanded="false" />
+                <element signature="e#6120#8728#0" expanded="false" />
+                <element signature="e#8814#9326#0" expanded="false" />
+                <element signature="e#9407#10682#0" expanded="false" />
+                <element signature="e#10743#11971#0" expanded="false" />
+                <element signature="e#12036#12315#0" expanded="false" />
+                <element signature="e#12382#12695#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -66,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/uwsgi.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -173,8 +174,8 @@
         <option value="$PROJECT_DIR$/apps/app.py" />
         <option value="$PROJECT_DIR$/apps/models/Address.py" />
         <option value="$PROJECT_DIR$/uwsgi.ini" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
   </component>
@@ -582,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532058849978</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="&quot;run.py&quot; fixed.">
+      <created>1532059032561</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1532059032561</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1023,14 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1055,32 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uwsgi.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1704">
-          <caret line="262" column="28" lean-forward="false" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
-          <folding>
-            <element signature="e#15#48#0" expanded="true" />
-            <element signature="e#5001#5761#0" expanded="false" />
-            <element signature="e#5822#6028#0" expanded="false" />
-            <element signature="e#6116#8724#0" expanded="false" />
-            <element signature="e#8810#9322#0" expanded="false" />
-            <element signature="e#9403#10678#0" expanded="false" />
-            <element signature="e#10739#11967#0" expanded="false" />
-            <element signature="e#12032#12311#0" expanded="false" />
-            <element signature="e#12378#12691#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
@@ -1098,6 +1072,42 @@
             <element signature="e#17951#19243#0" expanded="false" />
             <element signature="e#19320#19623#0" expanded="false" />
             <element signature="e#19702#20039#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uwsgi.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#48#0" expanded="true" />
+            <element signature="e#624#12704#0" expanded="false" />
+            <element signature="e#803#4944#0" expanded="false" />
+            <element signature="e#5005#5765#0" expanded="false" />
+            <element signature="e#5826#6032#0" expanded="false" />
+            <element signature="e#6120#8728#0" expanded="false" />
+            <element signature="e#8814#9326#0" expanded="false" />
+            <element signature="e#9407#10682#0" expanded="false" />
+            <element signature="e#10743#11971#0" expanded="false" />
+            <element signature="e#12036#12315#0" expanded="false" />
+            <element signature="e#12382#12695#0" expanded="false" />
           </folding>
         </state>
       </provider>

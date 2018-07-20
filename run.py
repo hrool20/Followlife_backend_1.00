@@ -13,7 +13,7 @@ from apps.models.Role import RoleModel
 from apps.models.UnitsOfMeasure import UnitOfMeasureModel
 from apps.models.User import UserModel
 
-my_app = app
+my_app = app.app
 db.init_app(my_app)
 migrate = Migrate(my_app, db)
 
