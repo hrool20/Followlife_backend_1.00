@@ -1,7 +1,6 @@
 # coding=utf-8
-from flask_migrate import Migrate
 
-from app import app
+from apps.app import app
 from apps.db import db
 from apps.models.District import DistrictModel
 from apps.models.Doctor import DoctorModel
