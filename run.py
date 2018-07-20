@@ -14,8 +14,6 @@ from apps.models.UnitsOfMeasure import UnitOfMeasureModel
 from apps.models.User import UserModel
 
 db.init_app(app=app)
-
-db.init_app(app)
 migrate = Migrate(app, db)
 
 
