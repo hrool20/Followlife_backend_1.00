@@ -3,7 +3,6 @@ from flask_migrate import Migrate
 from flask_restful import Api
 
 from app import *
-from app.db import db
 from app.models.Doctor import DoctorModel
 from app.models.Patient import PatientModel
 from app.models.User import UserModel
@@ -352,5 +351,6 @@ api.add_resource(Login, '/api/v1/login',
                  '/api/v1/auth')
 
 if __name__ == '__main__':
+    from app.db import db
     db.init_app(app)
     app.run(debug=app_config['development'].DEBUG)

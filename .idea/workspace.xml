@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c35ab4d7-b611-4374-9641-2e20d58907dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/DevelopmentEnvironment.py" afterPath="$PROJECT_DIR$/config/DevelopmentEnvironment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,19 +22,19 @@
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
-              <caret line="351" column="5" lean-forward="true" selection-start-line="351" selection-start-column="5" selection-end-line="351" selection-end-column="5" />
+              <caret line="354" column="20" lean-forward="true" selection-start-line="354" selection-start-column="20" selection-end-line="354" selection-end-column="20" />
               <folding>
                 <element signature="e#15#48#0" expanded="true" />
-                <element signature="e#1718#13682#0" expanded="false" />
-                <element signature="e#1781#5922#0" expanded="false" />
-                <element signature="e#5983#6743#0" expanded="false" />
-                <element signature="e#6804#7010#0" expanded="false" />
-                <element signature="e#7098#9706#0" expanded="false" />
-                <element signature="e#9792#10304#0" expanded="false" />
-                <element signature="e#10385#11660#0" expanded="false" />
-                <element signature="e#11721#12949#0" expanded="false" />
-                <element signature="e#13014#13293#0" expanded="false" />
-                <element signature="e#13360#13673#0" expanded="false" />
+                <element signature="e#1696#13660#0" expanded="false" />
+                <element signature="e#1759#5900#0" expanded="false" />
+                <element signature="e#5961#6721#0" expanded="false" />
+                <element signature="e#6782#6988#0" expanded="false" />
+                <element signature="e#7076#9684#0" expanded="false" />
+                <element signature="e#9770#10282#0" expanded="false" />
+                <element signature="e#10363#11638#0" expanded="false" />
+                <element signature="e#11699#12927#0" expanded="false" />
+                <element signature="e#12992#13271#0" expanded="false" />
+                <element signature="e#13338#13651#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -472,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532046159425</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Development Environment updated and used.">
+      <created>1532047026419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1532047026419</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -508,7 +514,8 @@
     <MESSAGE value="All endpoints added except Indicators." />
     <MESSAGE value="Some endpoints updated and required files for heroku deploy added." />
     <MESSAGE value="Error of jwt_required fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Error of jwt_required fixed." />
+    <MESSAGE value="Development Environment updated and used." />
+    <option name="LAST_COMMIT_MESSAGE" value="Development Environment updated and used." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -888,19 +895,19 @@
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="351" column="5" lean-forward="true" selection-start-line="351" selection-start-column="5" selection-end-line="351" selection-end-column="5" />
+          <caret line="354" column="20" lean-forward="true" selection-start-line="354" selection-start-column="20" selection-end-line="354" selection-end-column="20" />
           <folding>
             <element signature="e#15#48#0" expanded="true" />
-            <element signature="e#1718#13682#0" expanded="false" />
-            <element signature="e#1781#5922#0" expanded="false" />
-            <element signature="e#5983#6743#0" expanded="false" />
-            <element signature="e#6804#7010#0" expanded="false" />
-            <element signature="e#7098#9706#0" expanded="false" />
-            <element signature="e#9792#10304#0" expanded="false" />
-            <element signature="e#10385#11660#0" expanded="false" />
-            <element signature="e#11721#12949#0" expanded="false" />
-            <element signature="e#13014#13293#0" expanded="false" />
-            <element signature="e#13360#13673#0" expanded="false" />
+            <element signature="e#1696#13660#0" expanded="false" />
+            <element signature="e#1759#5900#0" expanded="false" />
+            <element signature="e#5961#6721#0" expanded="false" />
+            <element signature="e#6782#6988#0" expanded="false" />
+            <element signature="e#7076#9684#0" expanded="false" />
+            <element signature="e#9770#10282#0" expanded="false" />
+            <element signature="e#10363#11638#0" expanded="false" />
+            <element signature="e#11699#12927#0" expanded="false" />
+            <element signature="e#12992#13271#0" expanded="false" />
+            <element signature="e#13338#13651#0" expanded="false" />
           </folding>
         </state>
       </provider>
