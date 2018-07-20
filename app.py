@@ -6,7 +6,7 @@ from flask_jwt_extended.jwt_manager import JWTManager
 from flask_migrate import Migrate
 from flask_restful import Api
 
-from db import db
+from apps.db import db
 from apps.models.BaseClasses import BaseResponse
 from apps.resources.Address import Address
 from apps.resources.Appointment import AppointmentDoctor, AppointmentPatient
@@ -33,8 +33,7 @@ from config.LocalEnvironment import LocalEnvironment
 APP_CONFIG_FILE = 'config/LocalEnvironment.py'
 
 app_config = {
-    'local': LocalEnvironment,
-    'development': DevelopmentEnvironment
+    'env': DevelopmentEnvironment
 }
 
 
@@ -48,7 +47,7 @@ def configure_environment(flask_app, my_env, my_path):
                                                   my_env.DATABASE_DB
 
 app = Flask(__name__, instance_relative_config=True)
-configure_environment(app, app_config['local'], APP_CONFIG_FILE)
+configure_environment(app, app_config['env'], APP_CONFIG_FILE)
 # JWT
 app.config['JWT_AUTH_USERNAME_KEY'] = 'email'
 app.config['JWT_SECRET_KEY'] = 'followlife'
@@ -56,9 +55,13 @@ app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=24)
 # noinspection PyTypeChecker
 api = Api(app)
 jwt = JWTManager(app)
+migrate = Migrate(app, db)
 
 
 def load_tables():
+    db.engine.execute("SET @@auto_increment_increment=1;")
+    db.engine.execute("SET @@auto_increment_offset=1;")
+
     # District
     if DistrictModel.query.first() is None:
         district1 = DistrictModel('Callao', 'CAL')
@@ -385,5 +388,4 @@ api.add_resource(Login, '/api/v1/login',
 
 if __name__ == '__main__':
     db.init_app(app)
-    migrate = Migrate(app, db)
-    app.run(debug=app_config['local'].DEBUG)
+    app.run(debug=app_config['env'].DEBUG)
